@@ -34,7 +34,7 @@ export const login = async (req, res) => {
     res.status(error.statusCode || 500).json({ message: error.message });
   }
 };
-
+ 
 // @desc    Get all users (just to demonstrate reading from DB)
 // @route   GET /api/users
 export const getUsers = async (req, res) => {

@@ -12,7 +12,7 @@ const app = express();
 
 // middleware
 app.use(cors());
-app.use(morgan("dev")); // logs each request to the console (method, url, status, time)
+app.use(morgan("dev"));
 app.use(express.json());
 
 // routes
@@ -26,3 +26,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+  
